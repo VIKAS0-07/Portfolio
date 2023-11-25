@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java</title>
+    </head>
+    <form action="">
+        <center>
+        <body>
+            <h1>CALCULATOR</h1>>
+            <form>
+                <div>
+                    <label for="number">Number1</label>
+                    <input type="number" name="number" id="number" placeholder="Enter the number 1">
+                </div>
+                <div>
+                    <label for="number1">Number2</label>
+                    <input type="number" name="number1" id="number1" placeholder="Enter the number 2">
+                </div>
+                <div>
+                    <input type="button" value="+" onclick="addNumbers()">
+                </div>
+                <div>
+                    <input type="button" value="-" onclick="subNumbers()">
+                </div>
+                <div>
+                    <input type="button" value="*" onclick="multiplyNumbers()">
+                </div>
+                <div>
+                    <input type="button" value="/" onclick="divisionNumbers()">
+                </div>
+                <div>
+                    <input type="button" value="%" onclick="remainderNumbers()">
+                </div>
+                <div>
+                    <label for="total">total</label>
+                    <input type="text" name="total" readonly id="total">
+                </div>
+            </form>
+            <script src="JS/script.js"></script>
+    <script>
+        function addNumbers() {
+            var number1 = parseFloat(document.getElementById('number').value);
+            var number2 = parseFloat(document.getElementById('number1').value);
+            var total = number1 + number2;
+            document.getElementById('total').value = total;
+        }
+        function subNumbers() {
+            var number1 = parseFloat(document.getElementById('number').value);
+            var number2 = parseFloat(document.getElementById('number1').value);
+            var total = number1 - number2;
+            document.getElementById('total').value = total;
+        }
+        function multiplyNumbers() {
+            var number1 = parseFloat(document.getElementById('number').value);
+            var number2 = parseFloat(document.getElementById('number1').value);
+            var total = number1 * number2;
+            document.getElementById('total').value = total;
+        }
+        function divisionNumbers() {
+            var number1 = parseFloat(document.getElementById('number').value);
+            var number2 = parseFloat(document.getElementById('number1').value);
+            var total = number1 / number2;
+            document.getElementById('total').value = total;
+        }
+        function remainderNumbers() {
+            var number1 = parseFloat(document.getElementById('number').value);
+            var number2 = parseFloat(document.getElementById('number1').value);
+            var total = number1 % number2;
+            document.getElementById('total').value = total;
+        }
+    </script>
+</body>
+        </center>
+</form>
+</html>

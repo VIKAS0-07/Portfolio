@@ -1,0 +1,33 @@
+h2{
+    color:aqua
+}
+
+h3{
+    background-color: bisque;
+    color:blue;
+    border:1px dotted violet
+}
+
+body{
+    background-color: brown;
+    
+}
+.blink{
+    width:200px;
+    height:50px;
+    padding:15px;
+    text-align:center;
+    line-height:50px;
+}
+span{
+    text-align:center;
+    font-size:25px;
+    color:aquamarine;
+    animation:blink 2s linear infinite;
+}
+@keyframes blink{
+    0%{opacity:0;}
+    50%{opacity:.5;}
+    100%{opacity:1;}
+}
+
